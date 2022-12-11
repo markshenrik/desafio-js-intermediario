@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #E5E5E5;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  background: url("bg-repeat.jpg") repeat;
+}
+
+.container .informacao {
+  margin: 150px 50px;
+}
+
+.container .informacao .pergunta {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #ffffff;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.container .informacao .sugestao {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  width: 300px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 12px 0;
+}
+
+.form-container #formulario input{
+  display: block;
+  width: 300px;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 15px 15px 0 15px;
+  border: 1px solid #000000;
+}
+
+.borda-verde{
+  border-color: #3ccc87 !important;
+}
+
+.form-container #formulario input#mensagem {
+  padding-bottom: 65px;
+}
+
+.form-container #formulario input#btn-enviar {
+  background-color: #3ccc87;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.form-container #formulario input::placeholder{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 15px;
+    color: #A8A8A8;
+}
+
+.form-container #formulario p.campo-obg{
+    margin-left: 15px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 7px;
+}
+
+.form-container #formulario .aviso-campo{
+  display: none;
+}
+
+  /* SITUAÇÃO DE ERRO */
+
+.erro{
+  border-color: #F52E2E !important;
+}
+
+.alerta-erro{
+  display: block !important;
+  color: #F52E2E;
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 15px;
+}
