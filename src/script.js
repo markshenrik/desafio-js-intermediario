@@ -5,12 +5,12 @@ const avisoArr = document.querySelectorAll(".aviso-campo");
 enviar.addEventListener("click", (e) => {
   e.preventDefault();
 
-  for (i = 0; i < campos.length; i++) {
-    if (campos[i].value == "") {
-      campos[i].classList.add("erro");
-      avisoArr[i].classList.add("alerta-erro");
+  campos.forEach((campo, index) => {
+    if(campo.value == ""){
+      campo.classList.add("erro");
+      avisoArr[index].classList.add("alerta-erro")
     }
-  }
+  })
 });
 
 function bordaVerde(input) {

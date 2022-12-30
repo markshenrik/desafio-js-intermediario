@@ -11,22 +11,24 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  align-items: center;
-  background-color: #E5E5E5;
+  background: url("bg-repeat.jpg") repeat no-repeat;
+  background-size: contain;
 }
 
 html {
-  font-size: 62, 5%;
+  font-size: 62.5%;
 }
 
 .container {
   display: flex;
-  width: 800px;
-  background: url("bg-repeat.jpg") repeat;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .container .informacao {
-  margin: 150px 50px;
+  margin: 5rem;
 }
 
 .container .informacao .pergunta {
@@ -49,7 +51,6 @@ html {
 .form-container {
   background-color: #ffffff;
   padding: 5px;
-  margin: 12px 0;
 }
 
 .form-container #formulario input{
@@ -75,6 +76,11 @@ html {
   color: #ffffff;
   font-weight: 700;
   font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.form-container #formulario input#btn-enviar:hover{
+  cursor: pointer;
 }
 
 .form-container #formulario input::placeholder{
