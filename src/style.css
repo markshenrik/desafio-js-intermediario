@@ -101,6 +101,11 @@ html {
   display: none;
 }
 
+.form-container #formulario input[type='number']::-webkit-inner-spin-button, .form-container #formulario input[type='number']::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
   /* SITUAÇÃO DE ERRO */
 
 .erro{
@@ -113,4 +118,22 @@ html {
   font-weight: 400;
   font-size: 10px;
   margin-left: 15px;
+}
+@media(max-width: 740px){
+  body{
+    height: 120vh;
+    background-size: contain;
+    flex-direction: column
+  };
+
+  .container{
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 390px){
+
+  .container .informacao, .form-container, .form-container #formulario input{
+    width: 90%
+  }
 }
