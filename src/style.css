@@ -101,10 +101,10 @@ html {
   display: none;
 }
 
-.form-container #formulario input[type='number']::-webkit-inner-spin-button, .form-container #formulario input[type='number']::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
+input[type=number] { 
+  appearance: textfield; 
 }
+
 
   /* SITUAÇÃO DE ERRO */
 
@@ -119,12 +119,13 @@ html {
   font-size: 10px;
   margin-left: 15px;
 }
+
 @media(max-width: 740px){
   body{
     height: 120vh;
     background-size: contain;
-    flex-direction: column
-  };
+    flex-direction: column;
+  }
 
   .container{
     justify-content: space-around;
